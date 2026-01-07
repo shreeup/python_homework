@@ -10,7 +10,7 @@ class Point:
         return f" X: {self.x}, Y: {self.y}"
     
     def eucliddist(self,other):
-        dx = self.x - other.y
+        dx = self.x - other.x
         dy = self.y - other.y
         # Use math.hypot for a robust calculation of the hypotenuse/distance
         return math.hypot(dx, dy)
