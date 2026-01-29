@@ -1,0 +1,7 @@
+Everything listed under a User-agent line is restricted until a new User-agent line or the end of the file.
+Disallow: / blocks the entire site.
+Disallow: /folder/ blocks that directory and its contents.
+Disallow: /file.html blocks a specific file.
+
+By listing clear "disallow" or "allow" instructions, the file provides a voluntary code of conduct that enables "polite" bots to avoid sensitive areas, reduces the risk of overloading a server with excessive requests, and helps scrappers avoid violating a site’s privacy or usage policies. 
+It acts as a set of rules located in the root directory to guide bot behavior, such as preventing search engines from wasting "crawl budget" on irrelevant pages, stopping the indexing of admin areas, or restricting AI trainers from scraping data.
