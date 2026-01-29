@@ -1,0 +1,17 @@
+i was  finding elements from first element in search result
+but i had to change it to for loop to loop through every search element
+
+within each search element i can use find_element but i was using find_elements without need
+
+got some error when selecting element using this 
+links = driver.find_elements(By.XPATH, "//a")
+i asked chatgpt it gave me this reason
+
+Why this error is happening
+The OWASP page is dynamic. When Selenium grabs all <a> elements:
+links = driver.find_elements(By.XPATH, "//a")
+some of those elements:
+get re-rendered
+or become detached from the DOM
+
+so in had to consult chatgpt to get the correct elemet 
